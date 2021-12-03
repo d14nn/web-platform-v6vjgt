@@ -16,17 +16,58 @@ body > div {
 body > div > ul {
   list-style: none;
   text-align: right;
+  padding-right: 40px;
 }
 body > div > ul > li {
   display: inline-block;
+  margin: 0 8px;
+  /*background-color: aqua;*/
+  padding: 4px 12px;
 }
-body > div > ul > li > a {
-  text-decoration: none;
+body > div > ul > li > a:hover {
+  border-bottom: solid 3px yellow;
+  border-radius: 4px;
+  transition-duration: 0.1s;
+  transition-delay: 0.15s;
   color: yellow;
+}
+
+#callme {
+  display: inline-block;
+  background-color: yellow;
+  padding: 4px 12px;
+  margin: 0px 8px;
+}
+#callme:hover {
+  background-color: rgb(56, 56, 0);
+  transition-delay: 0.15s;
+}
+#callme > a {
+  font-size: 18px;
+  font-weight: 750;
+  color: black;
+}
+
+body > div > ul > li > a {
+  font-size: 18;
+  font-weight: 600;
 }
 #judul {
   float: left;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
-  
+  margin: 0px;
+}
+body > div > ul > li > a,
+#judul > a {
+  color: white;
+}
+#judul > a,
+body > div > ul > li > a,
+#callme > a {
+  text-decoration: none;
+}
+/*home page*/
+#coutainer {
+  background-image: url('https://unsplash.com/photos/hjPt6OnQGtg');
 }
